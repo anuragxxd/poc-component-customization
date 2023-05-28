@@ -1,0 +1,6 @@
+/package-ui/node_modules
+/package-service/node_modules
+/app-dashboard/node_modules
+/package-ui/dist
+/package-service/dist
+/app-dashboard/build

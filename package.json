@@ -1,13 +1,16 @@
 {
-  "name": "demo",
+  "name": "poc-component-customization",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build:ui": "cd package-ui && npm run build",
-    "i-all:ui": "cd package-ui && npm i",
+    "build:service": "cd package-service && npm run build",
+    "i-all:ui": "cd package-ui && rm -rf node_modules && npm i",
     "i-all:service": "cd package-service && rm -rf node_modules && npm i",
-    "dev:service": "npm run build:ui && npm run i-all:ui && npm run i-all:service && cd package-service && npm run dev"
+    "i-all:dashboard": "cd app-dashboard && rm -rf node_modules && npm i",
+    "i-all": "npm run i-all:ui && npm run i-all:service && npm run i-all:dashboard",
+    "dev:dashboard": "npm run i-all:ui && npm run build:ui && npm run i-all:service && npm run build:service && npm run i-all:dashboard && cd app-dashboard && npm run dev"
   },
   "author": "",
   "license": "ISC"
