@@ -1,8 +1,7 @@
 name: Bug Report
 description: File a bug report
-title: "[{{inputs.bug-type}}: "
+title: "[fix: "
 labels: ["triage"]
-blank_issues_enabled: true
 assignees:
   - octocat
 body:
