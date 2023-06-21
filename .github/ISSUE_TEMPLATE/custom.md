@@ -1,13 +1,4 @@
 ---
-name: Custom issue template
-about: Describe this issue template's purpose here.
-title: 'triage: '
-labels: ''
-assignees: ''
-
----
-
----
 name: General Purpose
 about: This template serves as a structured format for users to provide detailed information about encountered bugs.
 title: 'triage: '
